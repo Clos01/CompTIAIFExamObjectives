@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Reset margins and padding */
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+*{
+    /* border: 2px solid #ff1717; */
+}
 .callToAction {
     background-image: url("../images/ComTia.png");
     background-size: cover;
@@ -29,11 +41,8 @@
     position: relative;
     z-index: 2; /* Ensures content stays above the overlay */
   }
-/* Reset margins and padding */
-html, body {
+.bg-CTA  {
+    background-color: hwb(0 85% 15%);
     margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
+    padding: 70px;
+}
