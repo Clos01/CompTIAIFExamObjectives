@@ -1,0 +1,39 @@
+.callToAction {
+    background-image: url("../images/ComTia.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100vw; /* Ensures the section spans the full viewport width */
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    position: relative; /* Required for the overlay */
+  }
+  
+  .callToAction::before {
+    content: "";
+  position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(19, 19, 19, 0.767); /* Overlay color with opacity */
+    z-index: 1; /* Ensures the overlay stays above the background */
+  }
+  
+  .callToAction > * {
+    position: relative;
+    z-index: 2; /* Ensures content stays above the overlay */
+  }
+/* Reset margins and padding */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+  

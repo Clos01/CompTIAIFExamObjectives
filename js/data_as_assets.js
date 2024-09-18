@@ -31,7 +31,7 @@ function loadComponent(componentName, targetId){
 
 
 document.addEventListener('DOMContentLoaded', () =>{
-    loadComponent('data_as_assets', 'data_as_assets');
-    loadComponent('data_as_assets', 'data_as_assets');
+    loadComponent('data_as_assets', 'data_as_assets_Id');
+    // loadComponent('data_as_assets', 'data_as_assets');
 
 })
