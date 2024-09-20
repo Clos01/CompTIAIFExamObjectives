@@ -7,6 +7,9 @@ html, body {
     width: 100%;
     height: 100%;
 }
+ul, li {
+  padding: 0 0 10px 0;
+}
 *{
     /* border: 2px solid #ff1717; */
 }
@@ -41,8 +44,95 @@ html, body {
     position: relative;
     z-index: 2; /* Ensures content stays above the overlay */
   }
-.bg-CTA  {
-    background-color: hwb(0 85% 15%);
-    margin: 0;
-    padding: 70px;
+/* Section Styling */
+/* Ensures both sections are aligned and have the same width */
+.bg-CTA, .info-section {
+  max-width: 1800px; /* Set the same max-width for both sections */
+  width: 100%;
+  margin: 50px auto; /* Center both sections */
+  padding: 30px; /* Padding for spacing inside the section */
+  margin-top: 8rem;
+  
+}
+.bg-CTA, .info-section p {
+font-size: 25px;
+}
+.info-section{
+  margin: -50px auto; /* Center both sections */
+}
+/* Adjust flexbox behavior to prevent image overflow */
+.bg-CTA {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px; /* Padding inside the section */
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.text-content {
+  max-width: 50%; /* Ensure the text takes up only half the width */
+}
+
+.image-content {
+  max-width: 45%; /* Ensure the image takes up less than the text */
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Info Section */
+.info-section {
+  background-color: #f1f1f1;
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.info-section h2 {
+  font-size: 2em;
+  color: #000000;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.info-section p {
+  font-size: 1.2em;
+  color: #000000;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.info-container {
+background-color: #f1f1f1;
+  display: flex;
+  justify-content: start;
+margin: 0 auto;
+ width: 75%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .bg-CTA {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-content {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .image-content {
+    max-width: 100%;
+    width: 80%;
+  }
+
+  .info-section {
+    max-width: 100%; /* Ensure full width on smaller screens */
+  }
+}
+#nxt-btn-Id{
+  width: 200px;
 }
