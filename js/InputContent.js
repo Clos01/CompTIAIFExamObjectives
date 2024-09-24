@@ -18,7 +18,7 @@ function loadComponent(componentName, targetId) {
 // Function to navigate to another page
 function goToPage(pageName) {
   const link = document.getElementById("dynamicLink");
-  link.href = `../Pages/${pageName}.html`; // Adjusted path
+  link.href = `Pages/${pageName}.html`; // Adjusted path
   link.click();
 }
 
