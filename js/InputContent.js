@@ -1,6 +1,6 @@
 // Function to load HTML components into specified elements
 function loadComponent(componentName, targetId) {
-  fetch(`Sections/${componentName}.html`)
+  fetch(`/Sections/${componentName}.html`)
     .then((response) => {
       if (!response.ok) {
         throw new Error(`Failed to fetch ${componentName}: ${response.statusText}`);
