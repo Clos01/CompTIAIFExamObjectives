@@ -15,36 +15,36 @@
       <div class="bg-CTA">
           <div class="text-content">
               <h1>  Basics of network communication </h1>
-              <h3> What is intellectual property?  </h3>
+              <h3> What is a packet?  </h3>
               <p>
-                  Intellectual property is referring to creations of the mind, What does that mean? Creations of mind is referring to things like inventions; literary and artistic work; designs and symbols, names and images used in commerce. 
+                  We will start with a packet, a packet is a small unit of data transmitted over the network. This basically means that if i send something over the internet then the data of that information gets broken into smaller data so that its more efficient, reliable and flexible.
                 </p>
                 <div class="order-list">
                     <ol>
-                        <li>Trademarks</li>
+                        <li>Efficiency</li>
                         <ul>
                             <li>
-                                Trademark consists of a recognizable sign, word, phrase or symbol that helps identify the source of a product or service, which can include logos, brand names or slogan.
-                                TradeMark example: Coca-Cola: 
+                              it allows for multiple devices to share a network, simultaneously  as the packets can be transmitted independently.
                             </li>
                         </ul>
-                        <li> Copyright </li>
+                        <li> Reliability </li>
                         <ul>
                             <li>
-                              This is a way to protect someone who  creates an original work. A original work can be a book, a play, or a website, among others. The Goal is of copyrights is to prevent unauthorized copying of your work. Example would be Lyrics to a song, a movie or even a photograph. 
+                              if a packet is lost or corrupted during transmission, then only that specific packet needs to be resent, this is good because this helps reduce overall data transmission time
                             </li>
                         </ul>
-                        <li>Patents</li>
+                        <li>Flexibility</li>
                         <ul>
                             <li>
-                                A patent can be described as a exclusive right granted for an invention, process, or product that is new, useful and non obvious. Example is the telephone was patented by Alexander Graham in 1876
+                              Packets can take different paths through a network, ensuring that data can reach its destination even if there are network failures or congestion.
+                               The great thing about this is it's flexible i say this because packets can take different paths through a network, this ensures that data can reach the destination even if there are network failures.
                             </li>
                         </ul>
                     </ol>
                 </div>
             </div>
             <img
-              src="../images/intellectualproperty.png"
+              src="../images/datapacket.png"
               alt="Hacker Image"
               class="image-content"
             />
@@ -52,23 +52,259 @@
     
       <!-- New section with same width as CTA -->
       <div class="info-section">
-        <h2>What are digital products?</h2>
+        <h2>Packet Structure:</h2>
         <div>
-          <p>intangible goods or services created, sold, and consumed primarily through the internet.</p>
+          <p>A typical packet consists of two main parts:</p>
         </div>
     
         <!-- new section -->
         <div class="info-container">
-          <p>There are a ton of digital products available, but I'll focus on just a few. One key category is <strong>Software Applications</strong>. These encompass a wide range of categories, but essentially, they are sets of instructions, data, or programs used to operate computers and execute specific tasks. Software is the non-tangible component of computers, distinct from the physical hardware. It can be categorized into two main types: system software and application software.</p>
-    
+          <p><strong>Header</strong>: Contains information about the packet, such as: <strong><em>Source and destination addresses</em></strong>, <strong><em>Packet type or protocol</em></strong>, <strong><em>Sequence Number</em></strong>, <strong><em>Error detection code. </em></strong></p>
+          
+
         </div>
         <div class="info-container">
-          <p>
-           Another one would be <strong>Digital Content </strong>, this category of Digital product range from e-books to music to videos and even podcasts that users can access on a digital platform. 
-          </p>
+          <p><strong>Data:</strong> The actual content of the message.    </p>
         </div>
       
       </div>
+    </section>
+    
+ <!--! Big Section DNS  -->
+
+    <section>
+      <div class="bg-CTA">
+        <img
+        src="https://www.techtarget.com/rms/onlineimages/networking-basic_url_structure.png"
+        alt="Hacker Image"
+        class="image-content"
+      />
+          <div class="text-content">
+            
+              <h1>  Domain Name System  </h1>
+              <h3> What is a DNS?  </h3>
+              <p>
+                  DNS Stands for Domain Name System and a URL to IP Translation. WHat does this mean? Well url and IP are interconnected concepts that play a crucial role in how we access websites on the internet.
+                </p>
+                <div class="order-list">
+                    <ol>
+                        <li>What is DNS?</li>
+                        <ul>
+                            <li>
+                              DNS is a hierarchical distributed naming system, you can think of it like the hierarchy in the romans. 
+                              Translate human-readable domain names into numerical IP addresses.  
+                            </li>
+                        </ul>
+                        <li> The connection to DNS: </li>
+                        <ul>
+                            <li>
+                              DNS is the primary tool used for URL-to-IP translation.
+                              When your computer needs to access a website, it sends a DNS query to resolve the URL into an IP address
+                            </li>
+                        </ul>
+                      
+                        </ul>
+                    </ol>
+                </div>
+            </div>
+           
+      </div>
+    
+      <!-- New section with same width as CTA -->
+      <div class="info-section">
+        <h2> Device addresses</h2>
+        <h3>IP Address</h3>
+        <div>
+          <p> An IP address (Internet Protocol address) is a unique numerical label assigned to each device connected to a network that uses the Internet Protocol. It serves as a network address, enabling devices to communicate with each other over the interne  </p>
+          
+        </div>
+        
+    
+        <!-- new section -->
+<div class="new-section">
+  <h3>What is IPV4?? </h3>  
+
+</div>
+        <div class="info-container">
+         
+          <p>  <strong>IPV4 : </strong>stands for (Internet Protocol version 4): This is the older version and uses 32 bits to represent an address</p>
+          
+        </div>
+
+        <div class="new-section">
+          <h3>What is IPV6?? </h3>  
+        </div>
+                <div class="info-container">
+                 
+                  <p> <strong>IPV6 : </strong> stands for (Internet Protocol version 6): This is the newer version and uses 128 bits to represent an address. This is good for  for the growing number of devices connected to the internet.
+                  </p>
+                  
+                </div>
+                <div class="new-section">
+                  <h3>What is a MAC Address?? </h3>  
+                
+                </div>
+        <div class="info-container">
+          <p><strong>Mac Address : </strong>  is a unique identifier assigned to a network interface controller (NIC) in a computer or other networking device. It's essentially the physical address of the device on a network   </p>
+          
+        </div>
+        <div class="new-section">
+          <h3>Purpose of MAC Addressing:?? </h3>  
+        
+        </div>
+    <div class="info-container">
+    <p><strong>Addressing : </strong>  MAC addresses are used to identify devices on a local network.
+    </p>
+    </div>
+    <div class="new-section">
+  <h3> purpose of Mac Address of Data transmission?? </h3>  
+
+    </div>
+    <div class="info-container">
+  <p><strong>Data transmission : </strong>  When a device sends data to another device on the same network, the MAC address of the destination device is included in the packet </p>
+
+    </div>
+      
+      </div>
+    </section>
+    
+    <!--! big net section  -->
+
+
+    <section>
+      <div class="bg-CTA">
+      
+          <div class="text-content">
+            
+              <h1>   Basic protocols </h1>
+              <h3> What is HTTP/S?  </h3>
+              <p>
+                  stands for Hypertext Transfer Protocol Secure. It's a protocol used to transmit data on the World Wide Web
+                </p>
+                <div class="order-list">
+                    <ol>
+                        <li>Security?</li>
+                        <ul>
+                            <li>
+                              HTTPS is more secure than HTTP due to the encryption layer.
+                            </li>
+                        </ul>
+                        <li> URL: </li>
+                        <ul>
+                            <li>
+                              HTTPS URLs start with "https://" instead of "http://".
+                            </li>
+                        </ul>
+                        <li> Certificate: </li>
+                        <ul>
+                            <li>
+                              HTTPS websites require a digital certificate to establish a secure connection with the web browser.
+                            </li>
+                        </ul>
+                        <li> Cost: </li>
+                        <ul>
+                            <li>
+                              Implementing HTTPS can involve additional costs for obtaining a digital certificate and configuring the web server.
+                            </li>
+                        </ul>
+                        </ul>
+                    </ol>
+                </div>
+            </div>
+            <img
+            src="https://www.thesslstore.com/blog/wp-content/uploads/2022/11/https-vs-http-connections.png"
+            alt="Hacker Image"
+            class="image-content"
+          />
+      </div>
+    
+      <!-- New section with same width as CTA -->
+      <div class="info-section">
+        <h2> Basic protocols </h2>
+        <h3> POP3 </h3>
+        <div>
+          <p>  is a protocol used to retrieve email messages from a mail server to a local email client. It allows users to download emails from a server to their computer for offline reading and storage.  </p>
+          
+        </div>
+        
+    
+        <!-- new section -->
+<div class="new-section">
+  <h3> What is IMAP? </h3>  
+
+</div>
+        <div class="info-container">
+         
+          <p>  <strong>IMAP : </strong>stands for (Internet Protocol version 4): This is the older version and uses 32 bits to represent an address</p>
+          
+        </div>
+
+        <div class="new-section">
+          <h3>What is SMTP?? </h3>  
+        </div>
+                <div class="info-container">
+                 
+                  <p> <strong>SMTP : </strong> (Simple Mail Transfer Protocol) is a protocol used to send emails between servers on the internet. It defines the rules for how email messages are formatted and transmitted.
+                  </p>
+                  
+                </div>
+            
+    </div>
+      
+    
+      </div>
+    </section>
+    
+
+
+    <section>
+      <div class="bg-CTA">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jFcRreS_6P4?si=aarcM2dBPK3L8qsq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!-- <img
+            src="https://youtu.be/jFcRreS_6P4?si=aarcM2dBPK3L8qsq"
+            alt="Hacker Image"
+            class="image-content"
+          /> -->
+          <div class="text-content">
+            
+              <h1>   Basic protocols </h1>
+              <h3> What is HTTP/S?  </h3>
+              <p>
+                  stands for Hypertext Transfer Protocol Secure. It's a protocol used to transmit data on the World Wide Web
+                </p>
+                <div class="order-list">
+                    <ol>
+                        <li>Security?</li>
+                        <ul>
+                            <li>
+                              HTTPS is more secure than HTTP due to the encryption layer.
+                            </li>
+                        </ul>
+                        <li> URL: </li>
+                        <ul>
+                            <li>
+                              HTTPS URLs start with "https://" instead of "http://".
+                            </li>
+                        </ul>
+                        <li> Certificate: </li>
+                        <ul>
+                            <li>
+                              HTTPS websites require a digital certificate to establish a secure connection with the web browser.
+                            </li>
+                        </ul>
+                        <li> Cost: </li>
+                        <ul>
+                            <li>
+                              Implementing HTTPS can involve additional costs for obtaining a digital certificate and configuring the web server.
+                            </li>
+                        </ul>
+                        </ul>
+                    </ol>
+                </div>
+            </div>
+          
+      </div>
+    
     </section>
     
 
@@ -86,15 +322,7 @@
 
 
 
-
-
-
-
-    <!-- Button for next page -->
-    <button id="nxt-btn-Id">Next</button>
-
-    <!-- Hidden anchor link -->
-    <a id="dynamicLink" style="display:none;"></a>
+   
 
     <!-- JavaScript File -->
      <!-- Corrected script source -->
