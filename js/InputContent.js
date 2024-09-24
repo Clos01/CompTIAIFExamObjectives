@@ -1,52 +1,38 @@
-//Function = start function
-
-//loadHTML = function name
-
-//() function declaration
-
-// function loadHTML(nameOfID, nameOfHTMLID) {} putting it all together
-
-//nameOfID, nameOfHTMLID =  Parameters: can be any name but better to know what the purpose is so name it that
-
+// Function to load HTML components into specified elements
 function loadComponent(componentName, targetId) {
-  //Using the Fetch API:
-
-  fetch("/Sections/" + componentName + ".html")
-    //Handling the Response:
+  fetch(`../Sections/${componentName}.html`)
     .then((response) => {
       if (!response.ok) {
-        //? checks if the HTTP status is not in the range 200-299.
-        throw new Error(
-          `Failed to fetch ${componentName}: ${response.statusText}`
-        ); //! response.text() converts the response body to plain text (the HTML content).
+        throw new Error(`Failed to fetch ${componentName}: ${response.statusText}`);
       }
       return response.text();
     })
     .then((data) => {
-      // .then(data => { ... }) receives the HTML content and inserts it into the specified element.
-      document.getElementById(targetId).innerHTML += data; //  finds the element by id and sets its inner HTML to the fetched content. Carlos -> Finds the element in html associated with the ID  then whatever is in the will get fetched
+      document.getElementById(targetId).innerHTML += data;
     })
     .catch((error) => {
-      console.error(
-        "There has been a problem with your fetch operation:",
-        error
-      );
+      console.error("There has been a problem with your fetch operation:", error);
     });
 }
 
+// Function to navigate to another page
+function goToPage(pageName) {
+  const link = document.getElementById("dynamicLink");
+  link.href = `../Pages/${pageName}.html`; // Adjusted path
+  link.click();
+}
+
+// Event listener for DOM content loaded
 document.addEventListener("DOMContentLoaded", () => {
   loadComponent("data_as_assets", "data_as_assets_Id");
   loadComponent("data_security", "data_security_Id");
   loadComponent("intellectual_property", "intellectual_property_Id");
-});
-  // Function to set the href of the anchor link and simulate a click
-  function goToPage(pageName) {
-    const link = document.getElementById("dynamicLink");
-    link.href = `/pages/${pageName}.html`; // Set the href dynamically
-    link.click(); // Simulate a click on the link
-}
+  loadComponent("Networking_Page_Content", "Networking_page_Content_ID");
 
-// Event listener for the button
-document.getElementById("nxt-btn-Id").addEventListener("click", function() {
-    goToPage("NetworkingConcepts"); // Replace "page2" with your target page name
 });
+
+// Event listener for the "Next" button
+document.getElementById("nxt-btn-Id").addEventListener("click", () => {
+  goToPage("Networking_Page_Content");
+});
+
