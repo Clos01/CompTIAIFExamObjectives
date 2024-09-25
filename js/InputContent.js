@@ -1,6 +1,6 @@
 // Function to load HTML components into specified elements
 function loadComponent(componentName, targetId) {
-  fetch(`/Sections/${componentName}.html`)
+  fetch(`Sections/${componentName}.html`) // Removed the leading slash
     .then((response) => {
       if (!response.ok) {
         throw new Error(`Failed to fetch ${componentName}: ${response.statusText}`);
@@ -15,6 +15,7 @@ function loadComponent(componentName, targetId) {
     });
 }
 
+
 // Function to navigate to another page
 function goToPage(pageName) {
   const link = document.getElementById("dynamicLink");
@@ -27,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
   loadComponent("data_as_assets", "data_as_assets_Id");
   loadComponent("data_security", "data_security_Id");
   loadComponent("intellectual_property", "intellectual_property_Id");
-  loadComponent("Networking_Page_Content", "Networking_page_Content_ID");
+  loadComponent("networking_Page_Content", "networking_page_Content_ID");
 
 });
 
