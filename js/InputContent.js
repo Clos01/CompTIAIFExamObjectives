@@ -1,6 +1,7 @@
 // Function to load HTML components into specified elements
 function loadComponent(componentName, targetId) {
-  fetch(`Sections/${componentName}.html`) // Removed the leading slash
+  fetch(`https://username.github.io/Clos01/CompTIAIFExamObjectives/Sections/${componentName}.html`)
+  // ... rest of the code remains the same
     .then((response) => {
       if (!response.ok) {
         throw new Error(`Failed to fetch ${componentName}: ${response.statusText}`);
