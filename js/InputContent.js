@@ -1,6 +1,6 @@
 // Function to load HTML components into specified elements
 function loadComponent(componentName, targetId) {
-  fetch(`https://username.github.io/Clos01/CompTIAIFExamObjectives/Sections/${componentName}.html`)
+  fetch(`/Sections/${componentName}.html`)
   // ... rest of the code remains the same
     .then((response) => {
       if (!response.ok) {
